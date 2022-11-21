@@ -19,21 +19,21 @@ function imc(){
         var imc = peso / (altura * altura);
         document.write("Tu IMC es: " + imc);
         if(imc < 16){
-            document.write("Infrapeso (delgadez severa)");
+            document.write("Infrapeso(delgadez severa)");
         }else if(imc < 17){
-            document.write("Infrapeso (delgadez moderada)");
+            document.write("Infrapeso(delgadez moderada)");
         }else if(imc < 18.5){
-            document.write("Infrapeso (delgadez aceptable)");
+            document.write("Infrapeso(delgadez aceptable)");
         }else if(imc < 25){
-            document.write("Peso normal");
+            document.write("Pesonormal");
         }else if(imc < 30){
             document.write("Sobrepeso");
         }else if(imc < 35){
-            document.write("Obeso (Tipo I)");
+            document.write("Obeso(Tipo I)");
         }else if(imc < 40){
-            document.write("Obeso (Tipo II)");
+            document.write("Obeso(Tipo II)");
         }else{
-            document.write("Obeso (Tipo III)");
+            document.write("Obeso(Tipo III)");
         }
     }else{
         document.write("Los valores introducidos no son correctos");
