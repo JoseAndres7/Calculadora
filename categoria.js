@@ -1,5 +1,5 @@
 /**Crea un programa que solicite al usuario su año de nacimiento y devuelve la categorı́a a la que pertenece.
-Para ello, además de mostrar su resultado, mostrará un listado con las categorı́as que existen (desde Micros hasta Senior) 
+Para ello, además de mostrar su resultado, mostrará un listado con las categorı́as que existen (desde Micros hasta Senior)
 marcando la del usuario de alguna manera especial (negrita, subrayado, color...). */
 function categoria() {
     var anio = parseInt(document.getElementById("año").value);
