@@ -1,0 +1,141 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+
+    <!-- Enlace al documento css.-->
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menú lateral responsive - MagtimusPro</title>
+
+        <link rel="stylesheet" href="header.css">
+
+        <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body id="body">
+
+        <header>
+            <div class="icon__menu">
+                <i class="fas fa-bars" id="btn_open"></i>
+            </div>
+            <div>
+                <h1>Proyecto DWEC</h1>
+            </div>
+            <div>
+                <img class="img" id="imagen" src="img/cesur.png" alt="...">
+            </div>
+        </header>
+
+        <div class="menu__side" id="menu_side">
+
+            <div class="name__page">
+                <i class="fab fa-youtube"></i>
+                <h4>Joseti</h4>
+            </div>
+
+            <div class="options__menu">
+
+                <a href="index.html">
+                    <div class="option">
+                        <i class="fas fa-home" title="Inicio"></i>
+                        <h4>Inicio</h4>
+                    </div>
+                </a>
+
+                <a href="utilidades.html">
+                    <div class="option">
+                        <i class="far fa-address-card" title="Utilidades"></i>
+                        <h4>Utilidades</h4>
+                    </div>
+                </a>
+
+                <a href="formulario.html" class="selected">
+                    <div class="option">
+                        <i class="far fa-id-badge" title="Contacto"></i>
+                        <h4>Contacto</h4>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+        <main>
+            <div class="contact_form">
+
+                <div class="formulario">
+                    <h2>Formulario de contacto</h2>
+                    <h3>Escríbenos y nos pondremos en contacto con usted.</h3>
+
+                    <form action="submeter-formulario.php" method="post">
+
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                placeholder="Escribe tu nombre">
+                        </p>
+
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                placeholder="Escribe tu Email">
+                        </p>
+
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono"
+                                placeholder="Escribe tu teléfono">
+                        </p>
+
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                placeholder="Escribe un asunto">
+                        </p>
+
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                required="obligatorio" placeholder="Escribenos tu mensaje..."></textarea>
+                        </p>
+
+                        <button type="submit" name="enviar_formulario" id="enviar">
+                            <p>Enviar</p>
+                        </button>
+
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>Los campos son obligatorios.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+
+    </html>
