@@ -3,7 +3,7 @@ Habrá una tabla de horario de mañana que muestre las horas de dos en dos con
 Habrá otra tabla de horario de tarde que muestre las horas de una en una con el formato 16:00-17:00, desde las 16 hasta las 21:00 y los dı́as del lunes al domingo.
 Tanto las horas como los dı́as (es decir, la primera columna y la primera fila) tendrán etiqueta th. El resto tendrán etiqueta td. */
 function horarioManana() {
-    var valores = document.getElementById("valores");
+    var valores = document.getElementById("tabla1");
     let html = "";
     html += "<h1>Horarios Mañana</h1>";
     html += "<table border='1'>";
@@ -22,7 +22,7 @@ function horarioManana() {
 }
 
 function horarioTarde() {
-    var valores = document.getElementById("valores2");
+    var valores = document.getElementById("tabla1");
     let html = "";
     html += "<h1>Horarios Tarde</h1>";
     html += "<table border='1'>";
