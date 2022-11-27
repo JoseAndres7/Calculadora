@@ -29,3 +29,8 @@ function categoria() {
         valores.innerHTML = ("Los valores introducidos no son correctos");
     }
 }
+
+function categoriaOcultar() {
+    var valores = document.getElementById("categoria");
+    valores.innerHTML = "";
+}

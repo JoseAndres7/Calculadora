@@ -8,8 +8,6 @@
 
     <title>Utilidades Calculadora</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -70,18 +68,19 @@
     <main>
         <div class="contenedor">
             <div>
-                <div class="card" style="width: 25rem;">
-                    <img class="card-img-top" src="img/imc.jpg" alt="Card image cap">
+                <div class="card">
+                    <img class="card-img-top" src="img/imc.jpg" alt="Card image cap" style="width:100%">
                     <div class="card-body">
                         <div>
                             <h5>Calculadora de IMC: Indice de Masa Corporal.</h5>
                         </div>
                         <div>
-                            <input type="number" id="peso" placeholder="Inserta tu Peso (kg)">
-                            <input type="number" id="altura" placeholder="Inserta tu Altura (cm)">
+                            <input class="texto" type="number" id="peso" placeholder="Inserta tu Peso (kg)">
+                            <input class="texto" type="number" id="altura" placeholder="Inserta tu Altura (cm)">
                         </div>
                         <div>
-                            <input id="prueba" type="button" value="Calcular" onclick="imc();" />
+                            <input class="boton" id="prueba" type="button" value="Calcular" onclick="imc();" />
+                            <input class="boton" id="prueba" type="button" value="Ocultar" onclick="imcOcultar();" />
                         </div>
                         <div>
                             <b><span id="imc"></span></b>
@@ -91,17 +90,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" style="width: 25rem;">
-                    <img class="card-img-top" src="img/imc.jpg" alt="Card image cap">
+                <div class="card">
+                    <img class="card-img-top" src="img/categorias.jpg" alt="Card image cap" style="width:100%">
                     <div class="card-body">
                         <div>
                             <h5>Calculadora de categoría.</h5>
                         </div>
                         <div>
-                            <input class="" type="number" id="año" placeholder="Ingrese su año de nacimiento: ">
+                            <input class="texto" type="number" id="año" placeholder="Ingrese su año de nacimiento: ">
                         </div>
                         <div>
-                            <input id="prueba" type="button" value="Calcular" onclick="categoria();" />
+                            <input class="boton" id="prueba" type="button" value="Calcular" onclick="categoria();" />
+                            <input class="boton" id="prueba" type="button" value="Ocultar"
+                                onclick="categoriaOcultar();" />
                         </div>
                         <div>
                             <b><span id="categoria"></span></b>
@@ -111,48 +112,65 @@
 
             </div>
             <div>
-                <div class="card" style="width: 25rem;">
-                    <img class="card-img-top" src="img/imc.jpg" alt="Card image cap">
+                <div class="card">
+                    <img class="card-img-top" src="img/fcm.png" alt="Card image cap" style="width:100%">
                     <div class="card-body">
                         <div>
                             <h5>Calculadora de FCM: Frecuencia Cardiaca Máxima.</h5>
                         </div>
                         <div>
-                            <input class="" type="number" id="años" placeholder="Ingrese su edad (años): ">
-                            <input type="text" id="sexo" placeholder="Ingrese su sexo (H/M): ">
+                            <input class="texto" type="number" id="años" placeholder="Ingrese su edad (años): ">
+                            <input class="texto" type="text" id="sexo" placeholder="Ingrese su sexo (H/M): ">
                         </div>
                         <div>
-                            <input id="prueba" type="button" value="Calcular" onclick="fcm();" />
+                            <input class="boton" id="prueba" type="button" value="Calcular" onclick="fcm();" />
+                            <input class="boton" id="prueba" type="button" value="Ocultar" onclick="fcmOcultar();" />
                         </div>
                         <div>
-                            <span id="valores"></span>
+                            <b><span id="valores"></span></b>
                         </div>
                     </div>
                 </div>
 
-                <div class="card" style="width: 25rem;">
-                    <img class="card-img-top" src="img/imc.jpg" alt="Card image cap">
+                <div class="card">
+                    <img class="card-img-top" src="img/horario.jpg" alt="Card image cap" style="width:100%">
                     <div class="card-body">
                         <div>
                             <h5>Horario de la asociación</h5>
                         </div>
                         <div>
-                            <input id="prueba" type="button" value="Mostrar Horario Mañana" onclick="horarioManana();" />
+                            <input class="boton" id="prueba" type="button" value="Mostrar Horario Mañana"
+                                onclick="horarioManana();" />
+                            <input class="boton" id="prueba" type="button" value="Ocultar Horario Mañana"
+                                onclick="horarioOcultar();" />
                         </div>
                         <div>
-                            <input id="prueba" type="button" value="Mostrar Horario Tarde" onclick="horarioTarde();" />
+                            <input class="boton" id="prueba" type="button" value="Mostrar Horario Tarde"
+                                onclick="horarioTarde();" />
+                            <input class="boton" id="prueba" type="button" value="Ocultar Horario Tarde"
+                                onclick="horarioOcultar();" />
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
         <div>
             <span id="tabla1"></span>
-            <span id="tabla2"></span>
         </div>
     </main>
 
+    <footer>
+            <div>
+                <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyrigth</p>
+            </div>
+            <div>
+                <p>Jose Andres Perez Martinez</p>
+            </div>
+            <div>
+                <p>2022</p>
+            </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

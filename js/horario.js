@@ -5,7 +5,7 @@ Tanto las horas como los dı́as (es decir, la primera columna y la primera fila
 function horarioManana() {
     var valores = document.getElementById("tabla1");
     let html = "";
-    html += "<h1>Horarios Mañana</h1>";
+    html += "<h1>Horario Mañana</h1>";
     html += "<table border='1'>";
     html += "<tr><th></th><th>Lunes</th><th>Martes</th><th>Miercoles</th><th>Jueves</th><th>Viernes</th></tr>";
     for (var i = 9; i < 15; i++) {
@@ -24,7 +24,7 @@ function horarioManana() {
 function horarioTarde() {
     var valores = document.getElementById("tabla1");
     let html = "";
-    html += "<h1>Horarios Tarde</h1>";
+    html += "<h1>Horario Tarde</h1>";
     html += "<table border='1'>";
     html += "<tr><th></th><th>Lunes</th><th>Martes</th><th>Miercoles</th><th>Jueves</th><th>Viernes</th><th>Sabado</th><th>Domingo</th></tr>";
     for (var i = 16; i < 21; i++) {
@@ -37,4 +37,9 @@ function horarioTarde() {
     }
     html += "</table>";
     valores.innerHTML = html;
+}
+
+function horarioOcultar() {
+    var valores = document.getElementById("tabla1");
+    valores.innerHTML = "";
 }

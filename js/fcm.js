@@ -10,14 +10,19 @@ function fcm() {
     var anios = parseInt(document.getElementById("años").value);
     var sexo = parseInt(document.getElementById("sexo").value);
     var valores = document.getElementById("valores");
-    if (anios !="" && sexo !="" && anios !="NaN") {
+    if (anios !="" && sexo !="") {
         var frecuencia = 220 - anios;
-        valores.innerHTML = "<br>" + ("Tu frecuencia cardiaca máxima es: " + frecuencia) + "<br><br>" +
+        valores.innerHTML =("Tu frecuencia cardiaca máxima es: " + frecuencia) + "<br><br>" +
             ("Zona de recuperación (60%-70%): " + (frecuencia * 0.6).toFixed(0) + "-" + (frecuencia * 0.7).toFixed(0)) + "<br><br>" +
             ("Zona aeróbica (70%-80%): " + (frecuencia * 0.7).toFixed(0) + "-" + (frecuencia * 0.8).toFixed(0)) + "<br><br>" +
             ("Zona anaeróbica (80%-90%): " + (frecuencia * 0.8).toFixed(0) + "-" + (frecuencia * 0.9).toFixed(0)) + "<br><br>" +
-            ("Línea roja (90%-100%): " + (frecuencia * 0.9).toFixed(0) + "-" + frecuencia * 1) + "<br><br>";
+            ("Línea roja (90%-100%): " + (frecuencia * 0.9).toFixed(0) + "-" + frecuencia * 1);
     } else {
         valores.innerHTML = ("<b>Los valores introducidos no son correctos</b>");
     }
+}
+
+function fcmOcultar() {
+    var valores = document.getElementById("valores");
+    valores.innerHTML = "";
 }
