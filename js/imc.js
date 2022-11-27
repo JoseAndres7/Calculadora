@@ -18,7 +18,7 @@ function imc() {
     var imc = document.getElementById("imc");
     var lectura = document.getElementById("lectura");
 
-    if (peso != "" && altura != "") {
+    if (peso >= 0 && altura >= 0) {
         var imctotal = (peso / (altura * altura));
         imcredondeado = Number(imctotal.toFixed(2));
         imc.innerHTML = "Tu IMC es: " + imcredondeado;
