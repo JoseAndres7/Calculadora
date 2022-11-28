@@ -1,13 +1,13 @@
 /**Crea un programa que solicite al usuario su año de nacimiento y devuelve la categorı́a a la que pertenece.
 Para ello, además de mostrar su resultado, mostrará un listado con las categorı́as que existen (desde Micros hasta Senior)
 marcando la del usuario de alguna manera especial (negrita, subrayado, color...). */
-function categoria2() {
-    var anio = parseInt(document.getElementById("año").value);
-    var valores = document.getElementById("categoria");
+function categoria() {
+    let anio = parseInt(document.getElementById("año").value);
+    let valores = document.getElementById("categoria");
 
-    var insert="";
+    let insert="";
     if (anio > 0) {
-        var edad = 2022 - anio;
+        let edad = 2022 - anio;
         if (edad < 6) {
             insert += ("<b>Micros</b>");
         }else{
@@ -55,12 +55,12 @@ function categoria2() {
         }
 
     } else {
-        insert = ("Los valores introducidos no son correctos");
+        insert = ("<b>Los valores introducidos no son correctos</b>");
     }
     valores.innerHTML = insert;
 }
 
-function categoriaOcultar2() {
-    var valores = document.getElementById("categoria");
+function categoriaOcultar() {
+    let valores = document.getElementById("categoria");
     valores.innerHTML = "";
 }

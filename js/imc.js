@@ -13,13 +13,13 @@ Además de mostrar el resultado, mostrará la siguiente escala la clasificacio
 Además, comprobará que no se meta ningún valor incorrecto de peso ni altura, y en caso de que ası́ sea, volverá a solicitar los datos. */
 
 function imc() {
-    var peso = parseInt(document.getElementById("peso").value);
-    var altura = parseInt(document.getElementById("altura").value) / 100;
-    var imc = document.getElementById("imc");
-    var lectura = document.getElementById("lectura");
+    let peso = parseInt(document.getElementById("peso").value);
+    let altura = parseInt(document.getElementById("altura").value) / 100;
+    let imc = document.getElementById("imc");
+    let lectura = document.getElementById("lectura");
 
     if (peso >= 0 && altura >= 0) {
-        var imctotal = (peso / (altura * altura));
+        let imctotal = (peso / (altura * altura));
         imcredondeado = Number(imctotal.toFixed(2));
         imc.innerHTML = "Tu IMC es: " + imcredondeado;
         lectura.innerHTML = "<br>" + "Tu clasificación es: ";
@@ -47,8 +47,8 @@ function imc() {
 }
 
 function imcOcultar() {
-    var imc = document.getElementById("imc");
-    var valores = document.getElementById("lectura");
+    let imc = document.getElementById("imc");
+    let valores = document.getElementById("lectura");
     imc.innerHTML = "";
     valores.innerHTML = "";
 }

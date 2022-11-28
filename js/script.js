@@ -2,10 +2,10 @@
 document.getElementById("btn_open").addEventListener("click", open_close_menu);
 
 //Declaramos variables
-var side_menu = document.getElementById("menu_side");
-var btn_open = document.getElementById("btn_open");
-var imagen = document.getElementById("imagen");
-var body = document.getElementById("body");
+let side_menu = document.getElementById("menu_side");
+let btn_open = document.getElementById("btn_open");
+let imagen = document.getElementById("imagen");
+let body = document.getElementById("body");
 
 //Evento para mostrar y ocultar menú
     function open_close_menu(){

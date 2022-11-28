@@ -7,18 +7,18 @@ Lı́nea roja (90% - 100%).
 
 Además, comprobará que no se meta ningún valor incorrecto de edad y sexo, y en caso de que ası́ sea, volverá a solicitar los datos. */
 function fcm() {
-    var anios = parseInt(document.getElementById("años").value);
-    var sexo = document.getElementById("sexo").value;
-    var valores = document.getElementById("valores");
+    let anios = parseInt(document.getElementById("años").value);
+    let sexo = document.getElementById("sexo").value;
+    let valores = document.getElementById("valores");
     if (anios !="" && sexo =="H") {
-        var frecuencia = 220 - anios;
+        let frecuencia = 220 - anios;
         valores.innerHTML =("Tu frecuencia cardiaca máxima es: " + frecuencia) + "<br><br>" +
             ("Zona de recuperación (60%-70%): " + (frecuencia * 0.6).toFixed(0) + "-" + (frecuencia * 0.7).toFixed(0)) + "<br><br>" +
             ("Zona aeróbica (70%-80%): " + (frecuencia * 0.7).toFixed(0) + "-" + (frecuencia * 0.8).toFixed(0)) + "<br><br>" +
             ("Zona anaeróbica (80%-90%): " + (frecuencia * 0.8).toFixed(0) + "-" + (frecuencia * 0.9).toFixed(0)) + "<br><br>" +
             ("Línea roja (90%-100%): " + (frecuencia * 0.9).toFixed(0) + "-" + frecuencia * 1);
     }else if(anios !="" && sexo =="M"){
-        var frecuencia = 226 - anios;
+        let frecuencia = 226 - anios;
         valores.innerHTML =("Tu frecuencia cardiaca máxima es: " + frecuencia) + "<br><br>" +
             ("Zona de recuperación (60%-70%): " + (frecuencia * 0.6).toFixed(0) + "-" + (frecuencia * 0.7).toFixed(0)) + "<br><br>" +
             ("Zona aeróbica (70%-80%): " + (frecuencia * 0.7).toFixed(0) + "-" + (frecuencia * 0.8).toFixed(0)) + "<br><br>" +
@@ -30,6 +30,6 @@ function fcm() {
 }
 
 function fcmOcultar() {
-    var valores = document.getElementById("valores");
+    let valores = document.getElementById("valores");
     valores.innerHTML = "";
 }
