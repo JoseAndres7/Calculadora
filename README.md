@@ -1,2 +1,1 @@
-# Calculadora
-Calculadora de IMC JavaScript
+Es una web echa con html y funciones de javascript que hacen cálculos como tu masa corporal dependiendo de tu peso y tu altura, tambien puedes cálcular tu frecuencia cardiaca y tu categoría dependiendo de la edad que tengas.
